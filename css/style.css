@@ -1,0 +1,99 @@
+:root{
+    --background-color: hsl(185, 75%, 39%);
+    --text-color: hsl(227, 10%, 46%);
+    --profile-color: whitesmoke;
+}
+
+.container-principal{
+    background-color: var(--background-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card{
+    width: 320px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background: var(--profile-color) url('/src/imagens/bg-pattern-card.svg') no-repeat;
+}
+
+.usuario{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.foto-perfil img{
+    border: 5px solid var(--profile-color);
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.identificacao span, h5{
+    color: var(--text-color);
+    font-weight: 400;
+    text-align: center;
+}
+
+.estatiscas{
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.f-l-p p{  
+    font-weight: 700;
+}
+
+.f-l-p h6{
+    font-weight: 400;
+}
+
+@media (max-width: 375px) {
+    .profile-card{
+        width: 220px;
+        height: 290px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background: var(--profile-color) url('/imagens/bg-pattern-card.svg') no-repeat ;
+    }
+
+    .usuario{
+        height: 300px;
+        display: flex;
+        gap: 20px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .foto-perfil img{
+        border: 5px solid var(--profile-color);
+        width: 76px;
+        border-radius: 50%;
+        margin-top: 30px;
+    }
+
+    .estatiscas{
+        height: 100px;
+        display: flex;
+    }
+
+    .identificacao h3{
+        font-size: 15px;
+    }
+
+    .f-l-p p{
+        font-size: 15px;
+    }
+}
+
